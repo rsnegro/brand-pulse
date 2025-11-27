@@ -14,15 +14,15 @@ export const Hero = () => {
           </div>
           
           <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight">
-            Proteja e Fortaleça a
-            <br />
             <span className="bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">
-              Reputação da sua Marca
+              Previsão Charisma
             </span>
+            <br />
+            Detecção Precoce de Crises
           </h1>
           
           <p className="text-xl text-blue-50 max-w-2xl mx-auto">
-            Monitore menções, analise sentimentos e receba insights em tempo real sobre como sua marca é percebida no mercado.
+            Sistema inteligente de alerta que monitora conversas, detecta anomalias e previne crises reputacionais antes que escalem.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">

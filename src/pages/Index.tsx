@@ -1,10 +1,13 @@
 import { Hero } from "@/components/Hero";
-import { ReputationScore } from "@/components/ReputationScore";
+import { TermometroBrand } from "@/components/TermometroBrand";
+import { AlertasCrise } from "@/components/AlertasCrise";
+import { DeteccaoAnomalias } from "@/components/DeteccaoAnomalias";
 import { MetricCard } from "@/components/MetricCard";
 import { SentimentChart } from "@/components/SentimentChart";
+import { NarrativasEmergentes } from "@/components/NarrativasEmergentes";
+import { InfluenciadoresCriticos } from "@/components/InfluenciadoresCriticos";
 import { RecentMentions } from "@/components/RecentMentions";
-import { InsightCards } from "@/components/InsightCards";
-import { MessageSquare, Users, Eye, Share2 } from "lucide-react";
+import { MessageSquare, Eye, Zap } from "lucide-react";
 
 const Index = () => {
   return (
@@ -15,49 +18,59 @@ const Index = () => {
         <div className="space-y-8">
           {/* Título da seção de dashboard */}
           <div>
-            <h2 className="text-3xl font-bold text-foreground mb-2">Dashboard de Reputação</h2>
-            <p className="text-muted-foreground">Visão geral dos principais indicadores da sua marca</p>
+            <h2 className="text-3xl font-bold text-foreground mb-2">Sistema de Prevenção de Crises</h2>
+            <p className="text-muted-foreground">Monitoramento inteligente e alertas em tempo real</p>
           </div>
 
-          {/* Score principal e métricas */}
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
+          {/* Termômetro e Alertas de Crise */}
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             <div className="lg:col-span-1">
-              <ReputationScore score={87} change={5.2} period="mês anterior" />
+              <TermometroBrand />
             </div>
-            
-            <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              <MetricCard
-                title="Menções"
-                value="2.4k"
-                change={12.5}
-                icon={MessageSquare}
-                trend="up"
-              />
-              <MetricCard
-                title="Alcance"
-                value="124k"
-                change={8.3}
-                icon={Eye}
-                trend="up"
-              />
-              <MetricCard
-                title="Engajamento"
-                value="15.6k"
-                change={-2.1}
-                icon={Users}
-                trend="down"
-              />
+            <div className="lg:col-span-2">
+              <AlertasCrise />
             </div>
           </div>
 
-          {/* Gráfico de sentimento */}
+          {/* Detecção de Anomalias */}
+          <DeteccaoAnomalias />
+
+          {/* Métricas rápidas */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <MetricCard
+              title="Volume Total"
+              value="2.3k"
+              change={340}
+              icon={MessageSquare}
+              trend="up"
+            />
+            <MetricCard
+              title="Alcance"
+              value="485k"
+              change={180}
+              icon={Eye}
+              trend="up"
+            />
+            <MetricCard
+              title="Velocidade"
+              value="2.8x"
+              change={180}
+              icon={Zap}
+              trend="up"
+            />
+          </div>
+
+          {/* Gráfico de evolução do sentimento */}
           <SentimentChart />
 
-          {/* Grid de menções e insights */}
+          {/* Narrativas Emergentes e Influenciadores */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            <RecentMentions />
-            <InsightCards />
+            <NarrativasEmergentes />
+            <InfluenciadoresCriticos />
           </div>
+
+          {/* Menções recentes */}
+          <RecentMentions />
         </div>
       </main>
     </div>
