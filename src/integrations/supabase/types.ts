@@ -14,7 +14,132 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      brand_temperature: {
+        Row: {
+          brand_name: string
+          created_at: string
+          id: string
+          narrative_threats: number
+          negative_volume: number
+          neutral_volume: number
+          positive_volume: number
+          recorded_at: string
+          risk_level: string
+          temperature_score: number
+          velocity_indicator: number
+        }
+        Insert: {
+          brand_name: string
+          created_at?: string
+          id?: string
+          narrative_threats?: number
+          negative_volume?: number
+          neutral_volume?: number
+          positive_volume?: number
+          recorded_at?: string
+          risk_level: string
+          temperature_score: number
+          velocity_indicator?: number
+        }
+        Update: {
+          brand_name?: string
+          created_at?: string
+          id?: string
+          narrative_threats?: number
+          negative_volume?: number
+          neutral_volume?: number
+          positive_volume?: number
+          recorded_at?: string
+          risk_level?: string
+          temperature_score?: number
+          velocity_indicator?: number
+        }
+        Relationships: []
+      }
+      crisis_alerts: {
+        Row: {
+          alert_type: string
+          brand_name: string
+          created_at: string
+          description: string
+          detected_at: string
+          id: string
+          metrics: Json | null
+          resolved_at: string | null
+          severity: string
+          status: string
+          title: string
+          updated_at: string
+        }
+        Insert: {
+          alert_type: string
+          brand_name: string
+          created_at?: string
+          description: string
+          detected_at?: string
+          id?: string
+          metrics?: Json | null
+          resolved_at?: string | null
+          severity: string
+          status?: string
+          title: string
+          updated_at?: string
+        }
+        Update: {
+          alert_type?: string
+          brand_name?: string
+          created_at?: string
+          description?: string
+          detected_at?: string
+          id?: string
+          metrics?: Json | null
+          resolved_at?: string | null
+          severity?: string
+          status?: string
+          title?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      emerging_narratives: {
+        Row: {
+          brand_name: string
+          first_detected: string
+          growth_rate: number
+          id: string
+          last_updated: string
+          narrative: string
+          risk_score: number
+          sentiment: string
+          status: string
+          volume: number
+        }
+        Insert: {
+          brand_name: string
+          first_detected?: string
+          growth_rate?: number
+          id?: string
+          last_updated?: string
+          narrative: string
+          risk_score: number
+          sentiment: string
+          status?: string
+          volume?: number
+        }
+        Update: {
+          brand_name?: string
+          first_detected?: string
+          growth_rate?: number
+          id?: string
+          last_updated?: string
+          narrative?: string
+          risk_score?: number
+          sentiment?: string
+          status?: string
+          volume?: number
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
