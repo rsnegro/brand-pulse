@@ -145,7 +145,7 @@ export const AlertasCrise = () => {
                     {Object.entries(alert.metrics).map(([key, value]) => (
                       <div key={key} className="flex items-center gap-1">
                         <span className="capitalize">{key.replace('_', ' ')}:</span>
-                        <span className="font-semibold text-foreground">{value}</span>
+                        <span className="font-semibold text-foreground">{String(value)}</span>
                       </div>
                     ))}
                   </div>
