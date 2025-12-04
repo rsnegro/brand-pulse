@@ -1,5 +1,5 @@
 import { ChevronDown, Settings } from "lucide-react";
-import charismaLogo from "@/assets/charisma-logo.png";
+import charismaLogo from "@/assets/charisma-logo.svg";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
   DropdownMenu,
