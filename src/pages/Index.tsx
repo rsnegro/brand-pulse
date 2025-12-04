@@ -1,4 +1,6 @@
+import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
+import { Footer } from "@/components/Footer";
 import { TermometroBrand } from "@/components/TermometroBrand";
 import { AlertasCrise } from "@/components/AlertasCrise";
 import { DeteccaoAnomalias } from "@/components/DeteccaoAnomalias";
@@ -11,10 +13,11 @@ import { MessageSquare, Eye, Zap } from "lucide-react";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background flex flex-col">
+      <Navbar />
       <Hero />
       
-      <main className="container mx-auto px-4 py-12 max-w-7xl">
+      <main className="container mx-auto px-4 py-12 max-w-7xl flex-1">
         <div className="space-y-8">
           {/* Título da seção de dashboard */}
           <div>
@@ -73,6 +76,8 @@ const Index = () => {
           <RecentMentions />
         </div>
       </main>
+
+      <Footer />
     </div>
   );
 };
