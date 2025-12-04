@@ -10,7 +10,7 @@ import {
 
 export const Navbar = () => {
   return (
-    <header className="w-full bg-card border-b border-primary py-3 px-6">
+    <header className="w-full bg-card border-b border-primary py-3 px-4">
       <div className="container mx-auto max-w-7xl flex items-center justify-between">
         {/* Company Profile - Left */}
         <DropdownMenu>
