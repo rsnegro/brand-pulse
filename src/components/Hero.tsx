@@ -3,8 +3,24 @@ import { Button } from "@/components/ui/button";
 
 export const Hero = () => {
   return (
-    <section className="relative overflow-hidden bg-gradient-primary py-20 px-4">
-      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnoiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLW9wYWNpdHk9Ii4wNSIvPjwvZz48L3N2Zz4=')] opacity-20"></div>
+    <section className="relative overflow-hidden py-20 px-4 bg-[#111927]">
+      {/* Animated gradient blobs */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div 
+          className="absolute w-[600px] h-[600px] -top-48 -left-48 rounded-full animate-blob-1 blur-3xl"
+          style={{ background: 'radial-gradient(circle, rgba(26, 115, 186, 0.4) 0%, transparent 70%)' }}
+        />
+        <div 
+          className="absolute w-[500px] h-[500px] top-1/2 -right-32 rounded-full animate-blob-2 blur-3xl"
+          style={{ background: 'radial-gradient(circle, rgba(99, 102, 241, 0.35) 0%, transparent 70%)' }}
+        />
+        <div 
+          className="absolute w-[400px] h-[400px] -bottom-32 left-1/3 rounded-full animate-blob-3 blur-3xl"
+          style={{ background: 'radial-gradient(circle, rgba(26, 115, 186, 0.3) 0%, transparent 70%)' }}
+        />
+      </div>
+      {/* Subtle overlay pattern */}
+      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnoiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLW9wYWNpdHk9Ii4wNSIvPjwvZz48L3N2Zz4=')] opacity-10"></div>
       
       <div className="container mx-auto max-w-6xl relative">
         <div className="text-center space-y-6">
