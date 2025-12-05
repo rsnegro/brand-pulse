@@ -148,49 +148,70 @@
 
 @layer utilities {
   @keyframes blob-1 {
-    0%, 100% {
+    0% {
       transform: translate(0, 0) scale(1);
     }
-    25% {
-      transform: translate(30px, -50px) scale(1.1);
+    20% {
+      transform: translate(200px, 80px) scale(1.15);
     }
-    50% {
-      transform: translate(-20px, 20px) scale(0.95);
+    40% {
+      transform: translate(-100px, 150px) scale(0.9);
     }
-    75% {
-      transform: translate(50px, 50px) scale(1.05);
+    60% {
+      transform: translate(150px, -50px) scale(1.1);
+    }
+    80% {
+      transform: translate(-150px, -80px) scale(0.95);
+    }
+    100% {
+      transform: translate(0, 0) scale(1);
     }
   }
 
   @keyframes blob-2 {
-    0%, 100% {
+    0% {
       transform: translate(0, 0) scale(1);
     }
-    25% {
-      transform: translate(-40px, 30px) scale(1.05);
+    16% {
+      transform: translate(-180px, 100px) scale(1.1);
+    }
+    33% {
+      transform: translate(100px, 180px) scale(0.85);
     }
     50% {
-      transform: translate(30px, -40px) scale(1.1);
+      transform: translate(200px, -60px) scale(1.15);
     }
-    75% {
-      transform: translate(-20px, -20px) scale(0.95);
+    66% {
+      transform: translate(-80px, -120px) scale(0.95);
+    }
+    83% {
+      transform: translate(-200px, 40px) scale(1.05);
+    }
+    100% {
+      transform: translate(0, 0) scale(1);
     }
   }
 
   @keyframes blob-3 {
-    0%, 100% {
+    0% {
       transform: translate(0, 0) scale(1);
     }
-    33% {
-      transform: translate(40px, 40px) scale(1.08);
+    25% {
+      transform: translate(180px, -100px) scale(1.1);
     }
-    66% {
-      transform: translate(-30px, -30px) scale(0.92);
+    50% {
+      transform: translate(-120px, 80px) scale(0.9);
+    }
+    75% {
+      transform: translate(-180px, -60px) scale(1.12);
+    }
+    100% {
+      transform: translate(0, 0) scale(1);
     }
   }
 
   .animate-blob-1 {
-    animation: blob-1 5s ease-in-out infinite;
+    animation: blob-1 6s ease-in-out infinite;
   }
 
   .animate-blob-2 {
@@ -198,7 +219,7 @@
   }
 
   .animate-blob-3 {
-    animation: blob-3 6s ease-in-out infinite;
+    animation: blob-3 5s ease-in-out infinite;
   }
 }
 
