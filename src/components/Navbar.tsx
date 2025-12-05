@@ -1,5 +1,6 @@
 import { ChevronDown, Settings } from "lucide-react";
 import charismaLogo from "@/assets/charisma-logo.svg";
+import userAvatar from "@/assets/user-avatar.png";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
   DropdownMenu,
@@ -49,7 +50,7 @@ export const Navbar = () => {
         <DropdownMenu>
           <DropdownMenuTrigger className="flex items-center gap-3 hover:bg-muted rounded-lg px-2 py-1 transition-colors">
             <Avatar className="w-10 h-10">
-              <AvatarImage src="https://api.dicebear.com/7.x/avataaars/svg?seed=john" />
+              <AvatarImage src={userAvatar} />
               <AvatarFallback>JD</AvatarFallback>
             </Avatar>
             <div className="text-left">
