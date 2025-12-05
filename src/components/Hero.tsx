@@ -7,16 +7,16 @@ export const Hero = () => {
       {/* Animated gradient blobs */}
       <div className="absolute inset-0 overflow-hidden">
         <div 
-          className="absolute w-[600px] h-[600px] -top-48 -left-48 rounded-full animate-blob-1 blur-3xl"
-          style={{ background: 'radial-gradient(circle, rgba(26, 115, 186, 0.4) 0%, transparent 70%)' }}
+          className="absolute w-[500px] h-[500px] top-0 left-1/4 rounded-full animate-blob-1 blur-3xl"
+          style={{ background: 'radial-gradient(circle, rgba(26, 115, 186, 0.45) 0%, transparent 70%)' }}
         />
         <div 
-          className="absolute w-[500px] h-[500px] top-1/2 -right-32 rounded-full animate-blob-2 blur-3xl"
+          className="absolute w-[450px] h-[450px] top-1/3 right-1/4 rounded-full animate-blob-2 blur-3xl"
+          style={{ background: 'radial-gradient(circle, rgba(99, 102, 241, 0.4) 0%, transparent 70%)' }}
+        />
+        <div 
+          className="absolute w-[400px] h-[400px] bottom-0 left-1/2 -translate-x-1/2 rounded-full animate-blob-3 blur-3xl"
           style={{ background: 'radial-gradient(circle, rgba(99, 102, 241, 0.35) 0%, transparent 70%)' }}
-        />
-        <div 
-          className="absolute w-[400px] h-[400px] -bottom-32 left-1/3 rounded-full animate-blob-3 blur-3xl"
-          style={{ background: 'radial-gradient(circle, rgba(26, 115, 186, 0.3) 0%, transparent 70%)' }}
         />
       </div>
       {/* Subtle overlay pattern */}
